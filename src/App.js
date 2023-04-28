@@ -1,10 +1,11 @@
 //import Todo from './components/Todo';
 import { Routes, Route } from 'react-router-dom';
 
+import Layout from './components/layouts/Layout';
 import AllMeetups from './pages/AllMeetups';
 import NewMeetup from './pages/NewMeetup';
 import Favorites from './pages/Favorites';
-import MainNavigation from './components/layouts/MainNav';
+// import MainNavigation from './components/layouts/MainNav';
 
 function App() {
   return (
@@ -17,14 +18,13 @@ function App() {
     // </div>
 
     // Meetup App
-    <div>
-      <MainNavigation />
+    <Layout>
       <Routes>
         <Route path='/' element={<AllMeetups />}></Route>
         <Route path='/new-meetup' element={<NewMeetup />}></Route>
         <Route path='/favorites' element={<Favorites />}></Route>
       </Routes>
-    </div>
+    </Layout>
   );
 }
 

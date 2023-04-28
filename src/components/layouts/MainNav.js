@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './main_nav.module.css';
+import styles from './MainNav.module.css';
 
 const MainNav = () => {
   return (
